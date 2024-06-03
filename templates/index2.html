@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Sky View</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/static/sun.png" alt="Sky logo" id="sky_logo">
+            <a href="#"><b>Sky View: A Weather Wizard</b></a>
+        </div>
+        <div class="weather_details">
+            <h1>{{ weather_info[0] }}</h1>
+            <h2>{{ weather_info[1] }}</h2>
+            <p><b>Latitude:</b>{{ weather_info[2] }}</p>
+            <p><b>Longitude:</b>{{ weather_info[3] }}</p>
+            <p><b>Time Zone:</b>{{ weather_info[4] }}</p>
+            <p><b>Temperature in C:</b>{{ weather_info[5] }}</p>
+            <p><b>Temperature in F:</b>{{ weather_info[6] }}</p>
+            <p><b>Condition:</b>{{ weather_info[7] }}</p>
+            <p><b>Wind speed in mph:</b>{{ weather_info[8] }}</p>
+            <p><b>Wind direction and degree:</b>{{ weather_info[9] }} {{ weather_info[10] }}<sup>o</sup></p>
+            <p><b>Air pressure in mb:</b>{{ weather_info[11] }}</p>
+            <p><b>Precipitation in mm:</b>{{ weather_info[12] }}</p>
+            <p><b>Humidity:</b>{{ weather_info[13] }}%</p>
+            <p><b>Visibility in km:</b>{{ weather_info[14] }}</p>
+            <p><b>Wind Gust in mph:</b>{{ weather_info[15] }}</p>
+            <a href="{{ url_for('save',loc=weather_info[0], lat=weather_info[2], lon=weather_info[3]) }}" class="button">Save</a>
+        </div>
+    </div>
+</body>
+</html>
+
+

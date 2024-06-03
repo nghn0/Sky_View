@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Sky View</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/static/logo.png" alt="Sky logo" id="sky_logo">
+            <a href="#"><b>Sky View: A Weather Wizard</b></a>
+        </div>
+        <div class="lat_long">
+            <form action="/weather" method="post">
+                <div class="form-group">
+                    <label for="latitude"><b>Enter Latitude:</b></label>
+                    <input type="text" id="latitude" name="latitude" required>
+                </div>
+                <div class="form-group">
+                    <label for="longitude"><b>Enter Longitude:</b></label>
+                    <input type="text" id="longitude" name="longitude" required>
+                </div>
+                <button type="submit">Get Weather</button>
+            </form>
+        </div>
+        <div class="lat_long">
+            <form action="/weather" method="post">
+                <div class="form-group">
+                    <label for="cityname"><b>Enter the city name:</b></label>
+                    <input type="text" id="cityname" name="cityname" required>
+                </div>
+                <button type="submit">Get Weather</button>
+            </form>
+        </div>
+        <h1>Saved Locations</h1>
+        {% if not details %}
+            <div class="weather_card">
+                <h3>No saved Location</h3>
+            </div>
+        {% else %}
+            {% for i in details.values() %}
+                <div class="weather_card">
+                    <div class="location">
+                        <a href="{{ url_for('cityname',name=i[0]) }}" class="cityname"><h2>{{ i[0] }}</h2></a>
+                        <h4>{{ i[1] }}</h4>
+                    </div>
+                    <div class="details">
+                        <div class="temp">
+                            <img src="/static/sun.png" alt="temp">
+                            <p>{{ i[2] }}<sup><span class="degree">o</span></sup><span class="measure">C</span>
+                            </p>
+                        </div>
+                        <div class="windspeed">
+                            <img src="/static/wind.png" alt="wind">
+                            <p>{{ i[3] }}<span class="measure">kph</span></p>
+                        </div>
+                        <div class="humidity">
+                            <img src="/static/humidity.png" alt="humidity">
+                            <p>{{ i[4] }}<span class="perc">%</span></p>
+                        </div>
+                        <div class="winddirection">
+                            <img src="/static/winddirection.png" alt="direction">
+                            <p>{{ i[5] }} {{ i[6] }}<sup><span class="degree">o</span></sup></p>
+                        </div>
+                        <div class="precep">
+                            <img src="/static/precipation.png" alt="precipitation">
+                            <p>{{ i[7] }}<span class="measure">mm</span></p>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('delete',loc=i[0]) }}" class="buttonm">Delete</a>
+                </div>
+            {% endfor %}
+
+
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
