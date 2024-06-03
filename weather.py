@@ -26,8 +26,8 @@ def index():
         for i in rows:
             point = i[0]
             url = f"https://api.weatherapi.com/v1/current.json?key={key}&q={point}"
-            response = requests.get(url) #to get json data from backend
-            data = response.json() #converts to json format
+            response = requests.get(url)
+            data = response.json()
             location = data['location']['name']
             country = data['location']['country']
             temperature_c = data['current']['temp_c']
@@ -44,11 +44,11 @@ def index():
 
 @app.route('/weather', methods=['POST'])
 def get_weather():
-    try: # when user enters the lat and lon only then it gets executed
+    try:
         latitude = request.form['latitude']
         longitude = request.form['longitude']
         point = f"{latitude},{longitude}"
-    except: # if user have not entered lat and lon it gets the cityname
+    except:
         point = request.form['cityname']
     url = f"https://api.weatherapi.com/v1/current.json?key={key}&q={point}"
     response = requests.get(url)
@@ -75,8 +75,8 @@ def get_weather():
     return render_template('index2.html', weather_info=weather_info)
 
 
-@app.route('/link/<name>') # name acts a variable
-def cityname(name): # it gets the value from the name from html
+@app.route('/link/<name>') 
+def cityname(name):
     url = f"https://api.weatherapi.com/v1/current.json?key={key}&q={name}"
     response = requests.get(url)
     data = response.json()
