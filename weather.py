@@ -4,7 +4,7 @@ import sqlite3
 
 app = Flask(__name__)
 
-key = "7a552e6d485b4d08947134558243105"
+key = "7a552e6d485b4d08947134558243105"//pwd
 
 
 
