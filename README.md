@@ -1,9 +1,9 @@
 # 🌦️ Sky View: Weather Forecast Web App (Flask + WeatherAPI)
 <p align="left">
-  <img src="https://img.shields.io/badge/Framework-Flask-000000?style=flat-square" alt="Flask">
+  <img src="https://img.shields.io/badge/Framework-Flask-FF2D20?style=flat-square" alt="Flask">
   <img src="https://img.shields.io/badge/Language-Python-3776AB?style=flat-square" alt="Python">
-  <img src="https://img.shields.io/badge/Database-SQLite-07405E?style=flat-square" alt="SQLite">
-  <img src="https://img.shields.io/badge/API-WeatherAPI-F9D71C?style=flat-square" alt="WeatherAPI">
+  <img src="https://img.shields.io/badge/Database-SQLite-44D62C?style=flat-square" alt="SQLite">
+  <img src="https://img.shields.io/badge/API-WeatherAPI-FFD700?style=flat-square" alt="WeatherAPI">
 </p>
 
 A simple and interactive **Flask-based Weather Forecast Application** that allows users to:
