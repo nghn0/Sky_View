@@ -1,15 +1,122 @@
-# Sky_View - Weather web application
-- **Description**: A weather forecasting web application built using Flask that allows users to fetch real-time weather data. The app integrates with the WeatherAPI to provide current weather information, such as temperature, wind speed, humidity, and more. Users can input a city name or geographic coordinates (latitude and longitude) to get weather details, which can be saved or deleted from a SQLite database.
-- **Tech Stack**: Python, Flask, SQLite, Requests
-- **Key Features**:
-  - **Weather Data Fetching**: Users can get current weather for any location using city name or geographic coordinates.
-  - **Data Display**: Displays various weather details including temperature, wind speed, humidity, and more.
-  - **Database Integration**: Allows saving frequently used locations (with latitude and longitude) into a SQLite database and retrieving them easily.
-  - **City Name Links**: Users can click on city names to quickly fetch weather info for that specific location.
-  - **Location Management**: Users can save or delete cities from their saved list for quick access to their weather information.
+# 🌦️ Weather Forecast Web App (Flask + WeatherAPI)
 
-- **Future Improvements**:
-  - Enhance the user interface with modern design elements for better user experience.
-  - Add forecast features to provide weather predictions for multiple days.
-  - Allow users to customize the units of measurement (e.g., Celsius to Fahrenheit).
-  - Provide option for users to set their preferred unit system for all future queries (e.g., metric, imperial).
+A simple and interactive **Flask-based Weather Forecast Application** that allows users to:
+- Search weather using **City Name** or **Latitude & Longitude**
+- View detailed real-time weather conditions
+- **Save** locations to a SQLite database for quick access
+- **Delete** saved locations anytime
+
+---
+
+## ✨ Features
+
+- 🌍 Search weather by **City Name**
+- 📍 Search weather using **Latitude & Longitude**
+- 💾 Save favorite locations (stored in **SQLite**)
+- 🗑️ Delete saved locations
+- 📊 Displays temperature, humidity, wind, pressure, visibility, etc.
+- ⚡ Real-time weather data using **WeatherAPI**
+
+---
+
+## 📂 Project Structure
+
+```text
+Weather-App/
+│
+├── weather.py                 # Main Flask application
+├── saved_weather.db           # SQLite database (auto-created on first run)
+├── requirements.txt           # Python dependencies
+│
+├── templates/                 # HTML pages
+│   ├── index1.html            # Saved locations + overview
+│   └── index2.html            # Detailed weather result page
+│
+└── static/                    # CSS / images (optional)
+    └── style.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1) Create and Activate Virtual Environment (Recommended)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### 2) Install Requirements
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+✅ Required libraries:
+- Flask
+- requests  
+*(sqlite3 comes built-in with Python, so no need to install it separately)*
+
+---
+
+## 🔑 Get WeatherAPI Key
+
+This project uses **WeatherAPI** for real-time weather data.
+
+🔗 Website: https://www.weatherapi.com/
+
+Create an account and copy your API key from the dashboard.
+
+---
+
+## 🛠️ Update API Key in Code
+
+Open `weather.py` and replace:
+
+```python
+key = "your-api-key"
+```
+
+With your actual key:
+
+```python
+key = "YOUR_REAL_API_KEY_HERE"
+```
+
+---
+
+## ▶️ Run the Application
+
+Start the Flask server:
+
+```bash
+python weather.py
+```
+
+Then open in browser:
+
+✅ **http://127.0.0.1:5000/**
+
+---
+
+## 🖼️ Results / Output Screenshots
+
+(Add your screenshots below)
+
+### 📌 Screenshot 1
+![Screenshot 1](images/result1.png)
+
+### 📌 Screenshot 2
+![Screenshot 2](images/result2.png)
+
+---
+
+## 👨‍💻 Author
+
+**Nithish Gowda H N**  
+B.Tech (Hons.) CSE – AI & ML Major
