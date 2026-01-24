@@ -1,5 +1,10 @@
 # 🌦️ Sky View: Weather Forecast Web App (Flask + WeatherAPI)
-<p align="left"> <img src="https://img.shields.io/badge/Framework-Flask-lightgrey?style=flat-square" alt="Flask"> <img src="https://img.shields.io/badge/Language-Python-3776AB?style=flat-square" alt="Python"> <img src="https://img.shields.io/badge/Database-SQLite-003B57?style=flat-square" alt="SQLite"> <img src="https://img.shields.io/badge/API-WeatherAPI-yellow?style=flat-square" alt="WeatherAPI"> </p>
+<p align="left">
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/WeatherAPI-FF6F61?style=for-the-badge&logo=googlecloud&logoColor=white" alt="WeatherAPI">
+</p>
 
 A simple and interactive **Flask-based Weather Forecast Application** that allows users to:
 - Search weather using **City Name** or **Latitude & Longitude**
