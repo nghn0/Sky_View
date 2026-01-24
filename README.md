@@ -1,4 +1,5 @@
 # 🌦️ Sky View: Weather Forecast Web App (Flask + WeatherAPI)
+<p align="left"> <img src="https://img.shields.io/badge/Framework-Flask-lightgrey?style=flat-square" alt="Flask"> <img src="https://img.shields.io/badge/Language-Python-3776AB?style=flat-square" alt="Python"> <img src="https://img.shields.io/badge/Database-SQLite-003B57?style=flat-square" alt="SQLite"> <img src="https://img.shields.io/badge/API-WeatherAPI-yellow?style=flat-square" alt="WeatherAPI"> </p>
 
 A simple and interactive **Flask-based Weather Forecast Application** that allows users to:
 - Search weather using **City Name** or **Latitude & Longitude**
@@ -106,17 +107,20 @@ Then open in browser:
 
 ## 🖼️ Results / Output Screenshots
 
-(Add your screenshots below)
+<p align="center"> <img src="images/homepage.png" width="48%" alt="Homepage - Saved Locations" /> <img src="images/weatherpage.png" width="48%" alt="Weather Page - Detailed Forecast" /> </p>
 
-### 📌 Screenshot 1
-![Screenshot 1](images/result1.png)
+<p align="center"> <strong>🏠 Dashboard & Saved Locations</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>🌤️ Detailed Weather Insights</strong> </p>
 
-### 📌 Screenshot 2
-![Screenshot 2](images/result2.png)
-
+<p align="center"> <em>The homepage manages your persistent locations, while the weather page provides a deep dive into temperature, humidity, and wind metrics.</em> </p>
 ---
 
 ## 👨‍💻 Author
 
 **Nithish Gowda H N**  
 B.Tech (Hons.) CSE – AI & ML Major
+
+**Nandan**  
+B.Tech (Hons.) CSE – Cloud & Full Stack Major
+
+**Pratham Rajesh Vernekar**  
+B.Tech (Hons.) CSE – Cloud & Full Stack Major
