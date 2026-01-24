@@ -112,6 +112,7 @@ Then open in browser:
 <p align="center"> <strong>🏠 Dashboard & Saved Locations</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>🌤️ Detailed Weather Insights</strong> </p>
 
 <p align="center"> <em>The homepage manages your persistent locations, while the weather page provides a deep dive into temperature, humidity, and wind metrics.</em> </p>
+
 ---
 
 ## 👨‍💻 Author
