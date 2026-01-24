@@ -1,4 +1,4 @@
-# 🌦️ Weather Forecast Web App (Flask + WeatherAPI)
+# 🌦️ Sky View: Weather Forecast Web App (Flask + WeatherAPI)
 
 A simple and interactive **Flask-based Weather Forecast Application** that allows users to:
 - Search weather using **City Name** or **Latitude & Longitude**
